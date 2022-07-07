@@ -32,4 +32,6 @@
 <h1>Firebase - Firestore</h1>
 <img src='./public/screenshots/firestore.PNG' />
 
+<br>
+<br>
 <h1>Thank You !</h1>
