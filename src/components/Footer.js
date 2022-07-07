@@ -11,7 +11,7 @@ export default function Footer() {
                 <div className='row'>
 
                     <div className='col-sm marginer'>
-                        <p className='fontWeigth'>Maor Barzilay &nbsp;&nbsp;All Rights Reserved ® &nbsp;&nbsp; Zoo &nbsp;&nbsp; 2022</p>
+                        <p className='fontWeigth'>Igor Marushenko &nbsp;&nbsp;All Rights Reserved ® &nbsp;&nbsp; Zoo &nbsp;&nbsp; 2022</p>
                     </div>
                     <div className='col-sm marginer marginerLeft'>
                         <a href='https://github.com/Imarushenko' target='_blank'><SiGithub size={30} color="black" /></a>
