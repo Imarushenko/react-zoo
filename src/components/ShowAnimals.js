@@ -1,7 +1,6 @@
 import React from "react";
 
 export default function ShowAnimals({
-  id,
   category,
   img,
   isExistInIsrael,

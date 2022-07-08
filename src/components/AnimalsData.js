@@ -50,10 +50,10 @@ export default function AnimalsData() {
                 />
               </div>
             ))}
-            
+
         </div>
-          
+
       </div>
-      </>
+    </>
   );
 }
