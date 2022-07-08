@@ -7,6 +7,8 @@
 <h3>CSS</h3>
 <h3>Bootstrap</h3>
 <h3>Firebase - Firestore</h3>
+<h3>Pictures taken from https://pixabay.com/</h3>
+
 
 
 <h1>In this app you can see all the animals in the web zoo, you can manage the zoo by editing, deleting or add animals</h1>
