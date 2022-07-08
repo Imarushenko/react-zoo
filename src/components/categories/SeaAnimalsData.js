@@ -28,7 +28,7 @@ export default function SeaAnimalsData() {
         <>
             <Navbar />
             <div className="container">
-                <h1 style={{ marginTop: "1rem" }}>Air Animals Category</h1>
+                <h1 style={{ marginTop: "1rem" }}>Sea Animals Category</h1>
                 <hr />
                 <div className="row">
                     {animals.length > 0 &&

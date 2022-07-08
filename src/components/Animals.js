@@ -16,10 +16,10 @@ export default function Animals() {
             <button className="btn btn-warning" style={{ marginRight: "2em", width: 200, height: 50, border: "solid black 2px" }}>For Land Animals</button>
           </Link>
           <Link to='/animals/airAnimals'>
-            <button className="btn btn-info" style={{ marginRight: "2em", width: 200, height: 50, border: "solid black 2px" }}>For Sea Animals</button>
+            <button className="btn btn-info" style={{ marginRight: "2em", width: 200, height: 50, border: "solid black 2px" }}>For Air Animals</button>
           </Link>
           <Link to='/animals/seaAnimals'>
-            <button className="btn btn-success" style={{ marginRight: "2em", width: 200, height: 50, border: "solid black 2px" }}>For Air Animals</button>
+            <button className="btn btn-success" style={{ marginRight: "2em", width: 200, height: 50, border: "solid black 2px" }}>For Sea Animals</button>
           </Link>
         </div>
       </div>
