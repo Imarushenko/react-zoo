@@ -47,7 +47,6 @@ export default function SeaAnimalsData() {
 
                 </div>
             </div>
-            <Footer />
         </>
     );
 }

@@ -48,7 +48,6 @@ export default function LandAnimalsData() {
                 </div>
 
             </div>
-            <Footer />
         </>
     );
 }
