@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { collection, getDocs } from "firebase/firestore";
+import { collection, deleteDoc, getDocs, doc } from "firebase/firestore";
 import { db } from "../../firebase-config";
 import ShowAnimals from "../ShowAnimals";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
 
-export default function LandAnimalsData() {
+export default function LandAnimalsData({id}) {
     const [animals, setAnimals] = useState([]);
 
     // read external data
@@ -23,6 +23,16 @@ export default function LandAnimalsData() {
         };
         getAnimales(db);
     }, [animals]);
+
+      // delete animal function
+  const handleDelete = async () => {
+    // find by id
+    const animalDocRef = doc(db, "Animals", id);
+    try {
+      await deleteDoc(animalDocRef)
+    } catch (e) { alert(e) }
+
+  }
 
     return (
         <>
@@ -42,7 +52,10 @@ export default function LandAnimalsData() {
                                     isExistInIsrael={animal.data.isExistInIsrael}
                                     numOfLegs={animal.data.numOfLegs}
                                 />
+                                     <button className="btn btn-success">View Animal</button>
+                                     <button className="btn btn-danger" style={{ marginTop: 5 }} onClick={() => handleDelete()}>Delete Animal</button>
                             </div>
+                            
                         ))}
 
                 </div>
