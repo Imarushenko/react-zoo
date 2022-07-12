@@ -23,6 +23,7 @@
 <img src='./public/screenshots/add.PNG' />
 
 <h1>See animals by category</h1>
+<h2>Here you can also delete an animal from the database and view the particular animal</h2>
 <img src='./public/screenshots/land.PNG' />
 
 <h1>All the data - Firestore cloud of Google's Firebase</h1>
