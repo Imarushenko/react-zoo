@@ -19,17 +19,11 @@
 <h1>Animals list & "Add a new animal" button</h1>
 <img src='./public/screenshots/animals 1.PNG' />
 
-<h1>Animals list - Continuation of the page</h1>
-<img src='./public/screenshots/animals 2.PNG' />
-
-<h1>Animals list - Continuation of the page</h1>
-<img src='./public/screenshots/animals 3.PNG' />
-
 <h1>Add an animal page</h1>
 <img src='./public/screenshots/add.PNG' />
 
 <h1>See animals by category</h1>
-<img src='./public/screenshots/categories.PNG' />
+<img src='./public/screenshots/land.PNG' />
 
 <h1>All the data - Firestore cloud of Google's Firebase</h1>
 <img src='./public/screenshots/firestore.PNG' />

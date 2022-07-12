@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "../firebase-config";
-import ShowAnimals from "./ShowAnimals";
 import Navbar from "./Navbar";
 import { Link } from "react-router-dom";
+import ShowAnimalsOnly from "./ShowAnimalsOnly";
 
 export default function AnimalsData() {
   const [animals, setAnimals] = useState([]);
@@ -40,7 +40,7 @@ export default function AnimalsData() {
           {animals.length > 0 &&
             animals.map((animal) => (
               <div className="col-sm" key={animal.id}>
-                <ShowAnimals
+                <ShowAnimalsOnly
                   id={animal.id}
                   category={animal.data.category}
                   name={animal.data.name}

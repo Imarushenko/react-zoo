@@ -5,7 +5,7 @@ import ShowAnimals from "../ShowAnimals";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
 
-export default function LandAnimalsData({id}) {
+export default function LandAnimalsData() {
     const [animals, setAnimals] = useState([]);
 
     // read external data
@@ -24,23 +24,13 @@ export default function LandAnimalsData({id}) {
         getAnimales(db);
     }, [animals]);
 
-      // delete animal function
-  const handleDelete = async () => {
-    // find by id
-    const animalDocRef = doc(db, "Animals", id);
-    try {
-      await deleteDoc(animalDocRef)
-    } catch (e) { alert(e) }
-
-  }
-
     return (
         <>
             <Navbar />
             <div className="container">
                 <h1 style={{ marginTop: "1rem" }}>Land Animals Category</h1>
                 <hr />
-                <div className="row">
+                <div className="row container">
                     {animals.length > 0 &&
                         animals.map((animal) => (
                             <div className="col-sm" key={animal.id}>
@@ -52,12 +42,9 @@ export default function LandAnimalsData({id}) {
                                     isExistInIsrael={animal.data.isExistInIsrael}
                                     numOfLegs={animal.data.numOfLegs}
                                 />
-                                     <button className="btn btn-success">View Animal</button>
-                                     <button className="btn btn-danger" style={{ marginTop: 5 }} onClick={() => handleDelete()}>Delete Animal</button>
+                                     
                             </div>
-                            
                         ))}
-
                 </div>
 
             </div>
